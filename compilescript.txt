@@ -1,0 +1,8 @@
+g++ source.cpp>error.txt 2>&1
+if [ -x /home/bismith/compiler/a.out ];
+then 
+./a.out<input.txt>output.txt
+rm error.txt&&rm a.out
+fi
+rm input.txt&&rm source.cpp
+
